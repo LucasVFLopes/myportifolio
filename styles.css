@@ -1,61 +1,60 @@
+/* Fundo da página */
 body {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #1a1e29;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
+/* Estilo do cabeçalho */
 header {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #132d46;
 }
 
-header h1 {
-    color: #00d4ff;
+h1 {
+    margin: 0;
+    color: #01c38e;
 }
 
-.content {
+/* Container das colunas */
+.container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.column {
-    background-color: #1e1e1e;
     padding: 20px;
-    border-radius: 8px;
-    margin: 10px;
-    width: 22%;
 }
 
+/* Colunas */
+.column {
+    background-color: #132d46;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+}
+
+/* Títulos das colunas */
 .column h2 {
-    color: #00d4ff;
-    border-bottom: 2px solid #00d4ff;
-    padding-bottom: 10px;
+    color: #01c38e;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
+/* Botões de tópicos */
+button {
+    display: block;
+    width: 100%;
     margin: 10px 0;
+    padding: 10px;
+    background-color: #01c38e;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-ul li a {
-    color: #bb86fc;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-ul li a:hover {
-    color: #3700b3;
+button:hover {
+    background-color: #ffffff;
+    color: #01c38e;
 }
