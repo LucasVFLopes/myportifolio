@@ -24,6 +24,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    flex-wrap: wrap; /* Permite que as colunas se ajustem em diferentes tamanhos de tela */
 }
 
 /* Colunas */
@@ -33,11 +34,17 @@ h1 {
     border-radius: 10px;
     width: 22%;
     text-align: center;
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior */
 }
 
 /* Títulos das colunas */
 .column h2 {
     color: #01c38e;
+    margin: 0; /* Remove a margem para manter o título em uma linha única */
+    white-space: nowrap; /* Impede a quebra de linha no título */
+    overflow: hidden; /* Oculta o texto que excede o espaço disponível */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
 }
 
 /* Botões de tópicos */
@@ -52,6 +59,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    box-sizing: border-box; /* Inclui padding e border no tamanho total do elemento */
 }
 
 button:hover {
