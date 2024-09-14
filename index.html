@@ -1,51 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio de Habilidades e Projetos</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            font-size: 2em;
+            margin: 20px;
+            color: #ffffff;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+        .column h2 {
+            margin-bottom: 10px;
+            color: #ff9800;
+        }
+        .button {
+            background-color: #333;
+            color: #e0e0e0;
+            border: 1px solid #ff9800;
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background-color: #ff9800;
+            color: #121212;
+        }
+    </style>
 </head>
 <body>
+    <header>Portfólio de Habilidades e Projetos</header>
     <div class="container">
-        <header>
-            <h1>My Data & CX Portfolio</h1>
-        </header>
-        <div class="content">
-            <div class="column">
-                <h2>Melhoria Contínua</h2>
-                <ul>
-                    <li><a href="#">Lean Six Sigma Yellow Belt</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>CX</h2>
-                <ul>
-                    <li><a href="#">Jornada do Cliente</a></li>
-                    <li><a href="#">Touchpoints</a></li>
-                    <li><a href="#">CSAT</a></li>
-                    <li><a href="#">NPS</a></li>
-                    <li><a href="#">Churn</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Dados</h2>
-                <ul>
-                    <li><a href="#">Excel</a></li>
-                    <li><a href="#">Power BI</a></li>
-                    <li><a href="#">Tableau</a></li>
-                    <li><a href="#">Python</a></li>
-                    <li><a href="#">R</a></li>
-                    <li><a href="#">SQL</a></li>
-                    <li><a href="#">Estatística</a></li>
-                </ul>
-            </div>
-            <div class="column">
-                <h2>Produto</h2>
-                <ul>
-                    <li><a href="#">Experiência em Squad</a></li>
-                </ul>
-            </div>
+        <div class="column">
+            <h2>Melhoria Contínua</h2>
+            <div class="button">Lean Six Sigma Yellow Belt</div>
+        </div>
+        <div class="column">
+            <h2>CX</h2>
+            <div class="button">Jornada do Cliente</div>
+            <div class="button">Touchpoints</div>
+            <div class="button">CSAT</div>
+            <div class="button">NPS</div>
+            <div class="button">Churn</div>
+        </div>
+        <div class="column">
+            <h2>Dados</h2>
+            <div class="button">Excel</div>
+            <div class="button">Power BI</div>
+            <div class="button">Tableau</div>
+            <div class="button">Python</div>
+            <div class="button">R</div>
+            <div class="button">SQL</div>
+            <div class="button">Estatística</div>
+        </div>
+        <div class="column">
+            <h2>Produto</h2>
+            <div class="button">Experiência em Squad</div>
         </div>
     </div>
 </body>
