@@ -7,77 +7,89 @@
     <style>
         body {
             background-color: #121212;
-            color: #e0e0e0;
+            color: #E0E0E0;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin: 0;
+            padding: 20px;
         }
-        header {
-            font-size: 2em;
-            margin: 20px;
-            color: #ffffff;
+
+        h1 {
+            color: #00BFFF; /* Azul neon */
+            margin-bottom: 20px;
         }
+
         .container {
             display: flex;
             justify-content: center;
-            gap: 50px;
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
         }
+
         .column {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 200px;
+            gap: 10px;
         }
+
         .column h2 {
-            margin-bottom: 10px;
-            color: #ff9800;
-        }
-        .button {
-            background-color: #333;
-            color: #e0e0e0;
-            border: 1px solid #ff9800;
-            padding: 10px;
-            margin: 5px 0;
-            width: 100%;
+            color: #FFD700; /* Amarelo dourado */
             text-align: center;
-            cursor: pointer;
-            transition: 0.3s;
+            white-space: nowrap;
         }
+
+        .button {
+            background-color: #1E90FF;
+            color: #E0E0E0;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: 150px; /* Largura fixa para alinhar os botões */
+        }
+
         .button:hover {
-            background-color: #ff9800;
-            color: #121212;
+            background-color: #00BFFF;
         }
     </style>
 </head>
 <body>
-    <header>Portfólio de Habilidades e Projetos</header>
+    <h1>Portfólio de Habilidades e Projetos</h1>
     <div class="container">
         <div class="column">
             <h2>Melhoria Contínua</h2>
-            <div class="button">Lean Six Sigma Yellow Belt</div>
+            <button class="button">Lean Six Sigma Yellow Belt</button>
         </div>
         <div class="column">
-            <h2>CX</h2>
-            <div class="button">Jornada do Cliente</div>
-            <div class="button">Touchpoints</div>
-            <div class="button">CSAT</div>
-            <div class="button">NPS</div>
-            <div class="button">Churn</div>
+            <h2>Customer Experience</h2>
+            <button class="button">Jornada do Cliente</button>
+            <button class="button">Touchpoints</button>
+            <button class="button">CSAT</button>
+            <button class="button">NPS</button>
+            <button class="button">Churn</button>
         </div>
         <div class="column">
-            <h2>Dados</h2>
-            <div class="button">Excel</div>
-            <div class="button">Power BI</div>
-            <div class="button">Tableau</div>
-            <div class="button">Python</div>
-            <div class="button">R</div>
-            <div class="button">SQL</div>
-            <div class="button">Estatística</div>
+            <h2>Análise de Dados</h2>
+            <button class="button">Excel</button>
+            <button class="button">Power BI</button>
+            <button class="button">Tableau</button>
+            <button class="button">Python</button>
+            <button class="button">R</button>
+            <button class="button">SQL</button>
+            <button class="button">Estatística</button>
         </div>
         <div class="column">
-            <h2>Produto</h2>
-            <div class="button">Experiência em Squad</div>
+            <h2>Experiências com Produtos</h2>
+            <button class="button">Experiência em Squad</button>
         </div>
     </div>
 </body>
