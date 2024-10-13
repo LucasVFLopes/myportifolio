@@ -66,3 +66,28 @@ button:hover {
     background-color: #ffffff;
     color: #01c38e;
 }
+
+/* Remove o sublinhado dos links dentro de botões */
+a {
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+a button {
+    background-color: #01c38e;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+}
+
+/* Alteração de cor ao passar o mouse */
+a button:hover {
+    background-color: #ffffff;
+    color: #01c38e;
+}
